@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>合同信息表</title>
+		<link rel="stylesheet" href="../css/list.css" />
+		<link rel="stylesheet" href="../dist/css/bootstrap.min.css" />
+		<script src="../js/jquery-1.8.3.min.js"></script>
+		<script>
+		    /**
+		     * 全选或反选
+		     * @param {Object} thisz
+		     */
+			function checkAll(thisz) {
+				//获得name="id"所有复选框
+				var checkboxs = $("input[name=id]");
+				//console.log(checkboxs.length);
+				//修改复选框的选择状态
+				checkboxs.prop("checked", thisz.checked);
+			}
+			
+			/**
+			 * 下载
+			 */
+			function download() {
+			}
+			
+			
+		</script>
+		<style type="text/css">
+			.content {
+				position: relative;
+				margin: 50px auto 0px;
+				width: 90%;
+				min-width: 800px;
+				/* 最小宽度 */
+			}
+			
+			.content form table tr th,
+			td {
+				text-align: center;
+			}
+			
+			.content section {
+				position: relative;
+				width: 100%;
+			}
+			
+			.content section form {
+				text-align: right;
+			}
+			
+			.tr-header {
+				background-color: #E8E8E8 !important;
+			}
+			
+			.btn-groups {
+				text-align: center;
+			}
+			
+			.btn-groups input {
+				margin: 10px 20px 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<section class="content">
+			<section>
+				<form id="form1" method="get" action="" class="form-group form-inline">
+					<input type="text" name="suserName" placeholder="按用户名搜索!" class="form-control" />
+					<input type="submit" value="搜 索" class="btn btn-warning" />
+				</form>
+			</section>
+			<form id="form2" method="get" action="">
+				<table class="table table-hover table-bordered">
+					<tr class="tr-header">
+						<th><input type="checkbox" id="idAll" onclick="checkAll(this)" /></th>
+						<th>合同ID</th>
+						<th>员工ID</th>
+						<th>开始日期</th>
+						<th>结束时间</th>
+						<th>合同类型</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="id" value="1" /></td>
+						<td>1</td>
+						<td>admin</td>
+						<td>男</td>
+						<td>行政部</td>
+						<td>网络维护员</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="id" value="2" /></td>
+						<td>2</td>
+						<td>张三</td>
+						<td>男</td>
+						<td>市场部</td>
+						<td>市场部经理</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="id" value="3" /></td>
+						<td>3</td>
+						<td>李丽</td>
+						<td>女</td>
+						<td>财务部</td>
+						<td>会计</td>
+					</tr>
+				</table>
+				<p class="btn-groups">
+					<input type="button" value="下 载" class="btn btn-primary" onclick="download()" />
+				</p>
+			</form>
+		</section>
+	</body>
+
+</html>

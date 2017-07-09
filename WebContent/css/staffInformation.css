@@ -1,0 +1,55 @@
+.content {
+	position: relative;
+	margin: 50px auto 0px;
+	width: 90%;
+	min-width: 600px;
+	/* 最小宽度 */
+}
+
+.content form table tr th,
+td {
+	text-align: center;
+}
+ #form2{
+		position:relative;
+		top: 50px;
+		left:30px;
+		width:1020px;
+
+}  
+.form-control{
+	position:absolute;
+	top: 50px;
+	right: 130px;
+} 
+.btn{
+	position:relative;
+	color: lightseagreen;
+	border: solid 1px gray;
+	border-radius: 5px;
+	height: 35px;
+	width: 65px;
+	top: 30px;
+	right: 60px;
+}
+.table{
+	text-align: center;
+	position:relative;
+	top: 10px;
+	
+}
+.tr-header {
+	
+	background-color: #E8E8E8 !important;
+}
+.btn-groups {
+	position:relative;
+	top: 70px;
+	text-align:center ;
+}
+
+.btn-groups input {
+	margin: 10px 70px 0px;
+	padding: 12px;
+	border-radius: 8px;
+}

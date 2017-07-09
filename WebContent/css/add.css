@@ -1,0 +1,40 @@
+section{
+	position: relative;
+	width: 400px;
+	margin: 50px auto 0px;
+}
+section form dl dt{
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	padding-bottom: 2px;
+	border-bottom: solid 1px #E8E8E8;
+	text-indent: 24px;
+	margin-bottom: 25px;
+}
+section form dl dd{
+	width: 400px;
+	margin: 15px auto;
+}
+section form dl dd span{
+	width: 70px;
+	display: inline-block;
+}
+.input-size {
+	width: 300px !important;
+}
+
+.input-radio {
+	margin-left: 50px !important;
+}
+
+.btn-groups {
+	position: relative;
+	top: 5px;
+	left: 50px;
+	
+}
+
+.btn-groups input {
+	margin: 10px 30px 0px;
+}

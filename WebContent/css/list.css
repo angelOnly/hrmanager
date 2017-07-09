@@ -1,0 +1,33 @@
+.content {
+	position: relative;
+	margin: 50px auto 0px;
+	width: 90%;
+	min-width: 800px;
+	/* 最小宽度 */
+}
+
+.content form table tr th,
+td {
+	text-align: center;
+}
+
+.content section {
+	position: relative;
+	width: 100%;
+}
+
+.content section form {
+	text-align: right;
+}
+
+.tr-header {
+	background-color: #E8E8E8 !important;
+}
+
+.btn-groups {
+	text-align: center;
+}
+
+.btn-groups input {
+	margin: 10px 20px 0px;
+}

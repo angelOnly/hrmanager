@@ -1,0 +1,257 @@
+
+header {
+	position: fixed;
+	height: 130px;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: #EEFDFB;
+}
+
+
+body,
+ul {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.hr {
+	position: absolute;
+	top: 0px;
+	left: 40px;
+}
+.title{
+	position:absolute;
+	left:550px;
+    top:20px;
+    font-family:"幼圆";
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+.u {
+	position: absolute;
+	top: 30px;
+	right: 40px;
+}
+
+.login_message {
+	position: absolute;
+	top: 90px;
+	right: 50px;
+	font-family:"宋体";
+	color:block;
+}
+
+aside {
+	position: fixed;
+	top: 130px;
+	left: 0px;
+	bottom: 35px;
+}
+
+.drawer {
+	width: 200px;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding: .4em 0;
+	background: #45B8A8;
+	color: white;
+	text-align: center;
+	/* Remove 4px gap between <li> */
+	font-size: 0;
+}
+
+.drawer li {
+	pointer-events: none;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	list-style: none;
+	line-height: 40px;
+	transform: translateZ(0);
+}
+
+.drawer a {
+	pointer-events: auto;
+	position: relative;
+	display: block;
+	min-width: 5em;
+	margin-bottom: .4em;
+	padding: .4em;
+	line-height: 40px;
+	/* Reset font-size */
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	transition: background 0.3s;
+}
+
+.drawer a:active,
+.drawer a:focus {
+	background: #90DCD1;
+}
+
+.drawer i {
+	display: block;
+	margin-bottom: .2em;
+	font-size: 2em;
+}
+
+.drawer span {
+	font-size: .625em;
+	font-family: Raleway;
+	text-transform: uppercase;
+}
+
+.drawer li:hover ul {
+	/* Open the fly-out menu */
+	transform: translateX(0);
+	background: #90DCD1;
+	/* Enable this if you wish to replicate hoverIntent */
+}
+
+.drawer>li {
+	display: block;
+	line-height: 100%;
+	/* Add a shadow to the top-level link */
+	/* Show the shadow when the link is hovered over */
+	/* Fly out menus */
+}
+
+.drawer>li>a {
+	background: #45B8A8;
+}
+
+.drawer>li:hover {
+	z-index: 100;
+}
+
+.drawer>li:hover a {
+	background: #45B8A8;
+}
+
+.drawer>li a:hover {
+	background: #90DCD1;
+}
+
+.drawer>li>a:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+	width: 4px;
+	opacity: 0;
+	background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, transparent));
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+	background: -o-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+	background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+	transition: opacity 0.5s;
+}
+
+.drawer>li:hover a:after {
+	opacity: 1;
+}
+
+.drawer>li ul {
+	position: absolute;
+	/* Stack below the top level */
+	z-index: -1;
+	top: 0;
+	left: 100%;
+	height: 100%;
+	width: auto;
+	white-space: nowrap;
+	/* Close the menus */
+	transform: translateX(-100%);
+	background: #45B8A8;
+	transition: 0.5s transform;
+}
+
+article {
+	position: fixed;
+	top: 95px;
+	right: 0px;
+	bottom: 0px;
+	left: 200px;
+	height:534px;
+	/*background-color: lightcyan;*/
+	background-color: #EEFDFB;
+}
+
+article .label {
+	position: relative;
+	/* 相对定位    相对于四周相邻元素定位 或 相对于父级元素定位 */
+	width: 100%;
+	height: 30px;
+}
+
+article .label dl {
+	height: 32px;
+	margin: 1px;
+	padding: 0px;
+}
+
+article .label dl dt {
+	position: relative;
+	
+	width: 120px;
+	text-align: center;
+	line-height: 29px;
+	margin: 1px 5px 0px;
+	border-top: solid 1px lightgray;
+	border-right: solid 1px lightgray;
+	border-left: solid 1px lightgray;
+	border-top-left-radius: 14px !important;
+	border-top-right-radius: 14px !important;
+	float: left;
+	/* 浮动 */
+	background-color: #45B8A8;
+}
+
+article .label dl dt a {
+	text-decoration: none;
+	color: #525252;
+}
+
+article .label dl dt span {
+	position: absolute;
+	width: 5px;
+	line-height: 10px;
+	text-align: center;
+	top: 2px;
+	right: 5px;
+	/*border-left: solid 1px lightgray;
+				border-bottom: solid 1px lightgray;*/
+	color: gray;
+	cursor: pointer;
+}
+
+article .pageBody {
+	position: relative;
+	border: none !important;
+	width: 100%;
+	height: 100%;
+}
+
+/* .footer {
+				position: fixed;
+				bottom:0px;
+				left:0px;
+				background: #EEFDFB;
+				font-family: "微软雅黑";
+			    font-size: 12px;
+				width: 100%;
+				height: 35px;
+				text-align: center;
+			}
+			
+			.color-F00 {
+				color: #F00
+			} */

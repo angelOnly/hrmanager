@@ -1,0 +1,72 @@
+body {
+	font-family: "微软雅黑";
+	font-size: 12px;
+	background: url(../img/LoginBack.png) top center;
+	background-size: cover;
+}
+
+#loginer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -110px;
+	margin-left: -200px;
+	width: 400px;
+	border: solid 5px #E0EEEE;
+	/* 上   左右   下     的边界 */
+	border-radius: 10px;
+	/* 圆角 */
+	background-color: #F8F8F8;
+}
+
+#loginer dl dt {
+	font-size: 14px;
+	font-weight: bold;
+	/* 加粗 */
+	margin: 20px 0px;
+	/* 上下  左右    的边界 */
+	text-align: center;
+	/* 水平居中 */
+	letter-spacing: 3px;
+	/* 文字间距 */
+}
+
+#loginer dl dd {
+	text-align: center;
+	margin: 15px 0px;
+}
+
+.input {
+	width: 300px;
+	height: 26px;
+	text-indent: 24px;
+	/* 缩进 */
+}
+
+.input-user {
+	background-image: url(../img/input_icons_24.png);
+	background-repeat: no-repeat;
+	background-position-y: -68px;
+}
+
+.input-password {
+	background-image: url(../img/input_icons_24.png);
+	background-repeat: no-repeat;
+	background-position-y: -146px;
+}
+
+.btn {
+	width: 300px;
+	height: 30px;
+	background-color: #9FB6CD;
+	border: none;
+	/* 去除边框 */
+	color: #FFF;
+	/* 字体颜色 */
+	cursor: pointer;
+	/* 鼠标指针样式：小手型 */
+}
+
+.btn:hover {
+	background-color: #96CDCD;
+}
